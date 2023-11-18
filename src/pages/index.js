@@ -22,14 +22,14 @@ export default function Home() {
   };
   const [result, reexecuteQuery] = useQuery({
     query: showDataQuery,
-    variables: {
-      options: {
-        paginate: {
-          page: 1,
-          limit: 2,
-        },
-      },
-    },
+    // variables: {
+    //   options: {
+    //     paginate: {
+    //       page: 1,
+    //       limit: 50,
+    //     },
+    //   },
+    // },
   });
   const refresh = () => {
     // Refetch the query and skip the cache
